@@ -5,7 +5,7 @@ html {
 
 /* задаем цвет фона для контейнера nav. */
 nav {
-margin: 20px 0;
+margin-bottom: 40px 0;
 }
 			
 /* убираем отступы и поля, а также list-style для "ul", 
