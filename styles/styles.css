@@ -1,0 +1,106 @@
+html {
+  font-size: 16px;
+  font-family: 'Comforter Brush', cursive;
+}
+
+/* задаем цвет фона для контейнера nav. */
+nav {
+margin: 100px 0;
+}
+			
+/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+nav ul {
+padding:0;
+margin:0;
+list-style: none;
+position: relative;
+}
+			
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul ol {
+margin: 0px -7px 0 0;
+display:inline-block;
+}
+			
+/* стилизуем ссылки */
+nav a {
+display:block;
+padding:0 10px;
+font-size:20px;
+line-height: 60px;
+text-decoration:none;
+}
+			
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+background-color: #C8FDC8;
+}
+
+nav ul ul {
+display: none;
+position: absolute;
+top: 100%;
+}
+			
+/* отображаем выпадающий список при наведении */
+nav ul ol:hover > ul {
+display:inherit;
+}
+			
+/* первый уровень выпадающего списка */
+nav ul ul ol {
+min-width:150px;
+float:none;
+position: relativebackground-color: #C8FDC8;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+
+p {
+  font-size: 25px;
+  text-align: center;
+}
+
+
+li {
+  color: green;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+ul {
+  text-align: center;
+  line-height: 1;
+}
+
+body {
+  width: 700px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+article {
+    min-height: 50%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #AEBF3F;
+}
